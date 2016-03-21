@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="js/add.js"></script>
+    <!-- JavaScript is default HTML scripting language, So 'type' can be omitted-->
+    <title>Add Items</title>
+</head>
+<body>
+    <div id="content">
+        <h3>Add Items to List</h3>
+        <div>
+            <h4>Rules of the game:</h4>
+                <ol>
+                    <li>Enter any text into the input field given below.</li>
+                    <li>Click 'Add' to add the text into a list, you can see the items below the textbox.</li>
+                    <li> Click on the item to delete it. </li>
+                    <li>When you are done with adding/deleting, click on 'Submit'. </li>
+                    <li>After clicking 'Submit', list of text values added will be displayed and returned as array.</li>
+                </ol>
+        </div>
+    </div>
+    <div id="inputAction">
+        <form action="" method="post" onsubmit="javascript:returnArray()">
+            <input type = "text" id = "inputText"/>
+            <input type = "button" class="button" id = "addButton" value = "Add" onClick="addToList()"/>
+            <input type= "submit" class="button" value = "Submit"/>
+            <div id="displayList"></div>
+        </form>
+    </div>
+</body>
+</html>
